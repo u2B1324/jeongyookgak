@@ -1,0 +1,314 @@
+@charset 'utf-8';
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 400;
+    color: #000;
+    letter-spacing: normal;
+    padding-top: 96px;
+}
+
+/* 공통요소 */
+.inner {
+    position: relative;
+    display: block;
+    width: 1184px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-mr {
+    margin-right: 26px;
+}
+
+.header-ml {
+    margin-left: 42px;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
+.good-box {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 96px;
+    background: #000;
+    z-index: 99;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .inner {
+    overflow: hidden;
+}
+
+.header-inner-wrapper {
+    height: 44px;
+    line-height: 44px;
+    margin-top: 26px;
+}
+
+.header-left {
+    position: relative;
+    display: block;
+    float: left;
+
+    overflow: hidden;
+}
+
+.header-left li {
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-logo img {
+    vertical-align: 0px;
+}
+
+.header-right {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.header-right-menu {
+    position: relative;
+    display: block;
+}
+
+.header-right-menu li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0px 7px;
+}
+
+.header-right-menu li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.header-right-menu li:nth-child(2) {
+    margin-right: 14px;
+}
+
+.header-right-menu li:nth-child(2) a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: -14px;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    background: #fff;
+    width: 1px;
+    height: 14px;
+}
+
+.header-right-menu li:nth-child(3) {
+    margin-left: 14px;
+}
+
+.header-right-menu li:nth-child(4) {
+    margin-right: 0px;
+}
+
+.header-cart {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+}
+
+.header-cart img {
+    padding-bottom: 2px;
+}
+
+.gnb {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+}
+
+.gnb img {
+    padding-bottom: 2px;
+}
+
+/* 비주얼 */
+.visual {
+    position: relative;
+    display: block;
+    height: 560px;
+}
+
+.visual-img {
+    position: relative;
+    display: block;
+    font-size: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../img/main_visual.png) no-repeat center;
+}
+
+/* 배너 */
+.banner {
+    position: relative;
+    display: block;
+    height: 312px;
+}
+
+.banner-inner-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 63px;
+}
+
+.banner-left {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(1184px / 2);
+}
+
+.sw-banner a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 176px;
+
+    margin: 0 auto;
+}
+
+.sw-banner a img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    display: block;
+
+}
+
+.banner-right {
+    position: relative;
+    display: block;
+    float: left;
+    width: calc(1184px / 2);
+}
+
+/* 베스트상품 */
+.best {
+    position: relative;
+    display: block;
+    height: 1088px;
+}
+
+.best .inner > span {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #000;
+    line-height: 1;
+    font-style: bold;
+}
+
+/* 더보기 */
+.more {
+    position: relative;
+    display: block;
+    height: 458px;
+}
+
+.more .inner {
+    padding-top: 100px;
+}
+
+/* 하단  */
+.footer {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.footer-top {
+    position: relative;
+    display: block;
+    height: 63px;
+}
+
+.footer-top-left {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.footer-top-right {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.footer-bottom {
+    position: relative;
+    display: block;
+    height: 203px;
+}
+
+.footer-bottom-left {
+    position: relative;
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+.footer-bottom-right {
+    position: relative;
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.footer-bottom-right-btn {
+    position: relative;
+    display: inline-block;
+}

@@ -1,0 +1,164 @@
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    font-weight: 400;
+    color: #000;
+    letter-spacing: normal;
+}
+
+.clearfix::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+@mixin inner {
+    display: block;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+// .wrap {}
+
+// --------------------변수 자리----------------------
+
+    $header-list-mr: 10px;
+    $header-list-mr2: calc($header-list-mr * 2);
+
+// <--------------------변수 자리----------------------
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 96px;
+    background: #000;
+    z-index: 99;
+
+    &__inner {
+        @include inner();
+        padding-top: 26px;
+    }
+
+    &__contents {
+        display: flex;
+        height: 44px;
+        line-height: 44px;
+
+        @at-root .header-left {
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+
+            .header__logo {
+                margin-left: 11px;
+            }
+
+            >ul {
+                display: flex;
+
+                >li {
+                    margin-left: 30px;
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    >a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        @at-root .header-right {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin: 0px $header-list-mr;
+                    position: relative;
+
+                    a {
+                        color: #fff;
+                    }
+
+                    &:nth-child(2n)::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        right: -21px;
+                        top: calc(50% + 1px);
+                        transform: translateY(-50%);
+                        background: #fff;
+                        width: 1px;
+                        height: 14px;
+                    }
+
+                    &:nth-child(2n) {
+                        margin-right: $header-list-mr2;
+                    }
+
+                    &:nth-child(2n+1) {
+                        margin-left: $header-list-mr2;
+                    }
+                    &:last-child {
+                        margin-right: $header-list-mr;
+                    }
+
+                    &:last-child::after {
+                        margin-right: $header-list-mr;
+                        display: none;
+                    }
+                }
+            }
+
+            &__cart {
+                >img {
+                    margin: 0px 11px;
+                }
+            }
+
+            &__gnb {
+                margin: 0px 11px;
+            }
+
+            @at-root gnb {
+                // 내일작업
+            }
+        }
+    }
+}
