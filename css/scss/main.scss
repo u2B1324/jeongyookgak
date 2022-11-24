@@ -41,6 +41,7 @@ body {
 }
 
 @mixin inner {
+    position: relative;
     display: block;
     max-width: 1200px;
     height: 100%;
@@ -51,13 +52,14 @@ body {
 
 // --------------------변수 자리----------------------
 
-    $header-list-mr: 10px;
-    $header-list-mr2: calc($header-list-mr * 2);
+$header-list-mr: 10px;
+$header-list-mr2: calc($header-list-mr * 2);
+$nav-font-size: 18px;
 
 // <--------------------변수 자리----------------------
 
 .header {
-    position: fixed;
+    position: block;
     left: 0;
     right: 0;
     top: 0;
@@ -79,7 +81,7 @@ body {
         @at-root .header-left {
             display: flex;
             justify-content: flex-start;
-            width: 50%;
+            min-width: 420px;
 
             .header__logo {
                 margin-left: 11px;
@@ -103,7 +105,7 @@ body {
         @at-root .header-right {
             display: flex;
             justify-content: flex-end;
-            width: 50%;
+            width: 100%;
 
             ul {
                 display: flex;
@@ -135,30 +137,200 @@ body {
                     &:nth-child(2n+1) {
                         margin-left: $header-list-mr2;
                     }
+
                     &:last-child {
                         margin-right: $header-list-mr;
                     }
 
                     &:last-child::after {
-                        margin-right: $header-list-mr;
                         display: none;
                     }
                 }
             }
 
             &__cart {
-                >img {
-                    margin: 0px 11px;
-                }
+                margin: 0px 11px;
             }
 
             &__gnb {
                 margin: 0px 11px;
             }
+        }
+    }
+}
 
-            @at-root gnb {
-                // 내일작업
+.gnb {
+    position: fixed;
+    display: none;
+    // display: block;
+    right: 0;
+    top: 0;
+    width: 480px;
+    height: 100%;
+    background: #fff;
+    padding: 24px 32px;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);
+    z-index: 999;
+
+    &__button {
+        position: relative;
+
+        span {
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
+        &-cart {
+            position: absolute;
+            right: 56px;
+            top: 0;
+            width: 48px;
+            height: 48px;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
+        }
+
+        &-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 48px;
+            height: 48px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__goods {
+        margin-top: 28px;
+        height: 348px;
+        border-bottom: 2px solid #e0e0e0;
+
+        >span {
+            position: relative;
+            display: block;
+            width: 100%;
+            font-size: $nav-font-size;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            height: 264px;
+        }
+
+        &-list {
+            width: 96px;
+            height: 126px;
+        }
+
+        &-box {
+            display: block;
+            height: 100%;
+            padding: 20px 20px;
+
+            img {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &-text {
+            display: block;
+            text-align: center;
+            font-size: $nav-font-size;
+            color: #000;
+            margin-top: 16px;
+        }
+    }
+
+    &__menu {
+        margin-top: 30px;
+        li {
+            margin: 10px 0;
+            display: block;
+
+            &:last-child {
+                margin-top: 30px;
+            }
+            
+            a {
+                display: block;
+                width: 100%;
+                color: #000;
+                line-height: 40px;
+                font-weight: 700;
+                font-size: $nav-font-size;
+            }
+        }
+    }
+}
+
+.banner {
+    height: 60px;
+    display: block;
+    background: #f8724f;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+    
+    @mixin banner-font {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    &__inner {
+        @include inner();
+        img {
+            position: absolute;
+            left: 58%;
+            top: -8px;
+            scale: 0.8;
+            z-index: 1;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+        line-height: 60px;
+    }
+    &__left {
+        @include banner-font();
+        margin-left: 5px;
+        width: 130px;
+    }
+    &__middle {
+        @include banner-font();
+        width: 440px;
+        font-size: 17px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-position: under;
+
+        background: url('/img/banner_pork.png') no-repeat;
+        background-size: 31%;
+        background-position: 304px 2px;
+    }
+    &__right--close {
+        @include banner-font();
+        width: 60px;
+        z-index: 5;
+        i {
+            margin-left: 8px;
         }
     }
 }

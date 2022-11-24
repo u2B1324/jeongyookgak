@@ -8,12 +8,97 @@
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
     <title>정육각 :: 언제나 초신선</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/scss/main.css">
 </head>
 
 <body>
     <div class="wrap">
+        <!-- 상단배너 -->
+        <div class="banner">
+            <div class="banner__inner">
+                <a href="#" class="banner__link">
+                    <span class="banner__left">정육각 첫구매 선물</span>
+                    <span class="banner__middle">첫구매 시 초신선 삼겹살 증정</span>
+                    <!-- close 기능 넣기 -->
+                    <span class="banner__right--close">닫기<i class="fa-solid fa-xmark"></i></span>
+                </a>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav class="gnb">
+            <div class="gnb__button">
+                <span>메뉴</span>
+                <a href="#" class="gnb__button-cart">
+                    <img src="/img/gnb_cart.svg" alt="메뉴 카트">
+                </a>
+                <a href="#" class="gnb__button-close">
+                    <img src="/img/gnb_close.svg" alt="메뉴 닫기"></a>
+            </div>
+            <div class="gnb__goods">
+                <span>쇼핑하기</span>
+                <ul class="gnb__goods-wrap">
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_1.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">돼지</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_2.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">소</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_3.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">닭</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_4.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">수산</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_5.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">밀키트</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_6.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">우유</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_7.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">달걀</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_8.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">이유식</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="gnb__menu">
+                <li><a href="#">브랜드스토리</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </nav>
         <!-- 헤더 -->
         <header class="header">
             <div class="header__inner">
@@ -41,9 +126,6 @@
                         <a href="#" class="header-right__gnb">
                             <img src="/img/gnb_icon.png" alt="메뉴">
                         </a>
-                        <nav class="gnb">
-
-                        </nav>
                     </div>
                 </div>
             </div>
