@@ -258,6 +258,7 @@ $nav-font-size: 18px;
 
     &__menu {
         margin-top: 30px;
+
         li {
             margin: 10px 0;
             display: block;
@@ -265,7 +266,7 @@ $nav-font-size: 18px;
             &:last-child {
                 margin-top: 30px;
             }
-            
+
             a {
                 display: block;
                 width: 100%;
@@ -283,7 +284,7 @@ $nav-font-size: 18px;
     display: block;
     background: #f8724f;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
-    
+
     @mixin banner-font {
         color: #fff;
         font-size: 16px;
@@ -293,6 +294,7 @@ $nav-font-size: 18px;
 
     &__inner {
         @include inner();
+
         img {
             position: absolute;
             left: 58%;
@@ -301,6 +303,7 @@ $nav-font-size: 18px;
             z-index: 1;
         }
     }
+
     &__link {
         display: flex;
         justify-content: space-between;
@@ -308,11 +311,13 @@ $nav-font-size: 18px;
         width: 100%;
         line-height: 60px;
     }
+
     &__left {
         @include banner-font();
         margin-left: 5px;
         width: 130px;
     }
+
     &__middle {
         @include banner-font();
         width: 440px;
@@ -325,12 +330,39 @@ $nav-font-size: 18px;
         background-size: 31%;
         background-position: 304px 2px;
     }
+
     &__right--close {
         @include banner-font();
         width: 60px;
         z-index: 5;
+
         i {
             margin-left: 8px;
+        }
+    }
+}
+
+.visual {
+    position: relative;
+    display: block;
+    height: 560px;
+
+    &__inner {
+        @include inner();
+        height: auto;
+    }
+
+    &__img {
+        position: relative;
+        display: block;
+        width: 100vw;
+        max-width: 1200px;
+        height: auto;
+
+        img {
+            width: 100vw;
+            max-width: 1200px;
+            height: auto;
         }
     }
 }

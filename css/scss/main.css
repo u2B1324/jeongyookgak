@@ -288,4 +288,30 @@ body {
 }
 .banner__right--close i {
   margin-left: 8px;
+}
+
+.visual {
+  position: relative;
+  display: block;
+  height: 560px;
+}
+.visual__inner {
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+.visual__img {
+  position: relative;
+  display: block;
+  width: 100vw;
+  max-width: 1200px;
+  height: auto;
+}
+.visual__img img {
+  width: 100vw;
+  max-width: 1200px;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
