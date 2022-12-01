@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/scss/main.css">
 </head>
@@ -36,7 +37,8 @@
                     <img src="/img/gnb_cart.svg" alt="메뉴 카트">
                 </a>
                 <a href="#" class="gnb__button-close">
-                    <img src="/img/gnb_close.svg" alt="메뉴 닫기"></a>
+                    <img src="/img/gnb_close.svg" alt="메뉴 닫기">
+                </a>
             </div>
             <div class="gnb__goods">
                 <span>쇼핑하기</span>
@@ -136,6 +138,67 @@
                 <a href="#" class="visual__img">
                     <img src="/img/main_visual.png" alt="비주얼 이미지">
                 </a>
+            </div>
+        </section>
+        <!-- 슬라이드 배너 -->
+        <section class="slider">
+            <div class="slider__inner">
+                <div class="slider__wrap">
+                    <!-- 슬라이드 버튼 -->
+                    <div class="slider__button">
+                        <button class="slider__button--prev">이전</button>
+                        <div class="slider__button--pg"></div>
+                        <button class="slider__button--next">다음</button>
+                    </div>
+                    <!--// 슬라이드 버튼 -->
+                    <div class="slider__left">
+                        <div class="swiper-container slider__swiper">
+                            <!-- 슬라이드 내용 -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_1.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_2.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_3.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_4.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_5.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- //슬라이드 내용 -->
+                        </div>
+                    </div>
+                    <div class="slider__right">
+                        <a href="#" class="slider__right--img">
+                            <img src="./img/swiper_right.png" alt="배너 이미지">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 상품 리스트-->
+        <section class="goods">
+            <div class="goods__inner">
+                <span>정육각 베스트 상품</span>
+                <div class="goods__wrap">
+
+                </div>
             </div>
         </section>
     </div>
