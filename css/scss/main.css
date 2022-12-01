@@ -305,7 +305,6 @@ body {
 }
 .visual__img {
   display: block;
-  width: 100vw;
   max-width: 1200px;
   height: auto;
 }
