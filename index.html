@@ -8,196 +8,199 @@
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
     <title>정육각 :: 언제나 초신선</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scss/main.css">
 </head>
 
 <body>
-    <!-- 전체 레이아웃 -->
     <div class="wrap">
-        <!-- 상단 -->
+        <!-- 상단배너 -->
+        <div class="banner">
+            <div class="banner__inner">
+                <a href="#" class="banner__link">
+                    <span class="banner__left">정육각 첫구매 선물</span>
+                    <span class="banner__middle">첫구매 시 초신선 삼겹살 증정</span>
+                    <!-- close 기능 넣기 -->
+                    <span class="banner__right--close">닫기<i class="fa-solid fa-xmark"></i></span>
+                </a>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav class="gnb">
+            <div class="gnb__button">
+                <span>메뉴</span>
+                <a href="#" class="gnb__button-cart">
+                    <img src="/img/gnb_cart.svg" alt="메뉴 카트">
+                </a>
+                <a href="#" class="gnb__button-close">
+                    <img src="/img/gnb_close.svg" alt="메뉴 닫기">
+                </a>
+            </div>
+            <div class="gnb__goods">
+                <span>쇼핑하기</span>
+                <ul class="gnb__goods-wrap">
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_1.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">돼지</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_2.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">소</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_3.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">닭</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_4.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">수산</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_5.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">밀키트</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_6.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">우유</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_7.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">달걀</span>
+                        </a>
+                    </li>
+                    <li class="gnb__goods-list">
+                        <a href="#" class="gnb__goods-box">
+                            <img src="/img/gnb_goods_8.svg" alt="상품 이미지">
+                            <span class="gnb__goods-text">이유식</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="gnb__menu">
+                <li><a href="#">브랜드스토리</a></li>
+                <li><a href="#">이용가이드</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </nav>
+        <!-- 헤더 -->
         <header class="header">
-            <div class="inner">
-                <div class="header-inner-wrapper">
-                    <ul class="header-left">
-                        <li>
-                            <a href="#" class="header-logo">
-                                <img src="/img/black_logo.png" alt="정육각 로고">
-                            </a>
-                        </li>
-                        <li><a href="#" class="header-mr header-ml">쇼핑하기</a></li>
-                        <li><a href="#" class="header-mr">배송안내</a></li>
-                        <li><a href="#">이벤트</a></li>
-                    </ul>
+            <div class="header__inner">
+                <div class="header__contents">
+                    <div class="header-left">
+                        <a href="#" class="header__logo">
+                            <img src="./img/black_logo.png" alt="정육각 로고">
+                        </a>
+                        <ul>
+                            <li><a href="#">쇼핑하기</a></li>
+                            <li><a href="#">배송안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </div>
                     <div class="header-right">
-                        <ul class="header-right-menu">
+                        <ul>
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">로그인</a></li>
                             <li><a href="#">회원가입</a></li>
-                            <li class="mr-0">
-                                <a href="#" class="header-cart">
-                                    <img src="/img/cart.png" alt="장바구니">
-                                </a>
-                            </li>
-                            <li class="mr-0">
-                                <a href="#" class="gnb">
-                                    <img src="/img/gnb_icon.png" alt="메뉴">
-                                </a>
-                            </li>
                         </ul>
+                        <a href="#" class="header-right__cart">
+                            <img src="./img/cart.png" alt="장바구니">
+                        </a>
+                        <a href="#" class="header-right__gnb">
+                            <img src="./img/gnb_icon.png" alt="메뉴">
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- 비주얼 -->
         <section class="visual">
-            <a href="#" class="visual-img">
-                비주얼
-            </a>
+            <div class="visual__inner">
+                <a href="#" class="visual__img">
+                    <img src="/img/main_visual.png" alt="비주얼 이미지">
+                </a>
+            </div>
         </section>
-        <!-- 배너 -->
-        <section class="banner">
-            <div class="inner">
-                <div class="banner-inner-wrapper">
-                    <div class="banner-left">
-                        <!-- 배너 슬라이더 -->
-                        <div class="swiper sw-banner">
-                            <div class="swiper-wrapper">
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_1.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_2.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_3.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_4.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_5.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                                <!-- 슬라이더 내용 -->
-                                <div class="swiper-slide">
-                                    <a href="#">
-                                        <img src="./img/swiper_6.png" alt="배너 이미지">
-                                    </a>
-                                </div>
-                                <!--// 슬라이더 내용 -->
-                            </div>
-                        </div>
-                        <script>
-                            new Swiper('.sw-banner', {
-                                slidesPerView: 1,
-                                spaceBetween: 0,
-                                slidesPerGroup: 1,
-                            });
-                        </script>
-                        <!--// 배너 슬라이더 -->
+        <!-- 슬라이드 배너 -->
+        <section class="slider">
+            <div class="slider__inner">
+                <div class="slider__wrap">
+                    <!-- 슬라이드 버튼 -->
+                    <div class="slider__button">
+                        <button class="slider__button--prev">이전</button>
+                        <div class="slider__button--pg"></div>
+                        <button class="slider__button--next">다음</button>
                     </div>
-                    <div class="banner-right">
-                        <a href="#" class="banner-right-img">
+                    <!--// 슬라이드 버튼 -->
+                    <div class="slider__left">
+                        <div class="swiper-container slider__swiper">
+                            <!-- 슬라이드 내용 -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_1.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_2.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_3.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_4.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/swiper_5.png" alt="슬라이드 이미지">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- //슬라이드 내용 -->
+                        </div>
+                    </div>
+                    <div class="slider__right">
+                        <a href="#" class="slider__right--img">
                             <img src="./img/swiper_right.png" alt="배너 이미지">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- 베스트상품 -->
-        <section class="best">
-            <div class="inner">
+        <!-- 상품 리스트-->
+        <section class="goods">
+            <div class="goods__inner">
                 <span>정육각 베스트 상품</span>
-                <div class="good-box"></div>
-                <div class="good-box"></div>
-                <div class="good-box"></div>
+                <div class="goods__wrap">
 
-                <div class="good-box"></div>
-                <div class="good-box"></div>
-                <div class="good-box"></div>
-            </div>
-        </section>
-        <!-- 더보기 -->
-        <section class="more">
-            <div class="inner">
-                <a href="#" class="more-img"></a>
-            </div>
-        </section>
-        <!-- 하단 -->
-        <footer class="footer">
-            <div class="inner">
-                <div class="footer-top">
-                    <div class="footer-top-left">
-                        <a href="#">인재채용</a>
-                        <a href="#">이용약관</a>
-                        <a href="#"><b>개인정보처리방침</b></a>
-                    </div>
-                    <div class="footer-top-right">
-                        <a href="#">정육각 앱 설치</a>
-                        <a href="#">카카오톡 채널</a>
-                        <a href="#">인스타그램</a>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="footer-bottom-left">
-                        <div class="footer-logo">하단 로고</div>
-                        <div>
-                            <span>(주)정육각
-                                <span>대표이사: 김재연</span>
-                                <span>주소: 경기도 김포시 고촌읍 아라육로57번길 126</span>
-                        </div>
-                        <div>
-                            <span>사업자등록번호 : 224-87-00271
-                                <a href="#" class="">[조회]</a>
-                            </span>
-                            <span>통신판매업신고번호: 2021-경기김포-0668</span>
-                        </div>
-                        <div>
-                            개인정보관리책임자: 박준태(privacy@yookgak.com)
-                        </div>
-                        <copyright>© 2021 Jeongyookgak Inc. All rights reserved.</copyright>
-                    </div>
-                    <div class="footer-bottom-right">
-                        <p>
-                            고객센터<br />
-                            1800-0658<br />
-                            평일: 08:30 - 17:30<br />
-                            점심: 12:30 - 13:30<br />
-                            (토, 일 및 공휴일 휴무)<br />
-                        </p>
-                        <p>
-                            카카오톡: <a href="#">@정육각</a><br />
-                            이메일: <a href="#">help@yookgak.com</a>
-                        </p>
-                        <div class="footer-bottom-right-btn">
-                            <span>자주묻는 질문</span>
-                            <span>1:1 문의</span>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </footer>
+        </section>
     </div>
 </body>
 
